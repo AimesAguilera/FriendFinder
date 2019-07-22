@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+
+<head>
+    <meta charset='UTF-8'>
+    <title> Friend Finder </title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+    <link rel='stylesheet' href='./assets/style.css'>
+</head>
+
+<body>
+
+    <div class='container'>
+
+        <h2 id='surveyTitle'><strong> Please answer the survey </strong></h2>
+        <hr>
+
+        <div class='container' id='yourInfoHolder'>
+            
+            <h3> Your info: </h3>
+    
+            <h4> Name: (required) </h4>
+            <input type='text' id='name' class='form-control' placeholder='your name here' required>
+    
+            <h4> Photo: (required) </h4>
+            <input type='text' id='photo' class='form-control' placeholder='link to your photo here' required>
+
+        </div>
+
+        <hr>
+
+
+        <h3><strong> Question 1 </strong></h3>
+        <h4> You are an introvert. </h4>
+        <select class='chosen-select' id='question1'>
+            <option value=''></option>
+            <option value='1'>1 (hard NO)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (definitely)</option>
+        </select>
+
+        <h3><strong> Question 2 </strong></h3>
+        <h4> You are an extrovert. </h4>
+        <select class='chosen-select' id='question2'>
+            <option value=''></option>
+            <option value='1'>1 (hard NO)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (definitely)</option>
+        </select>
+
+        <h3><strong> Question 3 </strong></h3>
+        <h4> You tend to stay calm and composed under pressure. </h4>
+        <select class='chosen-select' id='question3'>
+            <option value=''></option>
+            <option value='1'>1 (hard NO)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (definitely)</option>
+        </select>
+
+        <h3><strong> Question 4 </strong></h3>
+        <h4> You like to stay busy doing active things. </h4>
+        <select class='chosen-select' id='question4'>
+            <option value=''></option>
+            <option value='1'>1 (hard NO)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (definitely)</option>
+        </select>
+
+        <h3><strong> Question 5 </strong></h3>
+        <h4> You're into creative/artistic stuff, generally speaking. </h4>
+        <select class='chosen-select' id='question5'>
+            <option value=''></option>
+            <option value='1'>1 (hard NO)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (definitely)</option>
+        </select>
+
+        <h3><strong> Question 6 </strong></h3>
+        <h4> You feel that the truth is more important than someones feelings. </h4>
+        <select class='chosen-select' id='question6'>
+            <option value=''></option>
+            <option value='1'>1 (hard NO)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (definitely)</option>
+        </select>
+
+        <h3><strong> Question 7 </strong></h3>
+        <h4> You enjoy going out drinking with friends. </h4>
+        <select class='chosen-select' id='question7'>
+            <option value=''></option>
+            <option value='1'>1 (hard NO)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (definitely)</option>
+        </select>
+
+        <h3><strong> Question 8 </strong></h3>
+        <h4> You like to challenge yourself by doing things out of your comfort zone. </h4>
+        <select class='chosen-select' id='question8'>
+            <option value=''></option>
+            <option value='1'>1 (hard NO)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (definitely)</option>
+        </select>
+
+        <h3><strong> Question 9 </strong></h3>
+        <h4> You like watching/playing sports and going to sporting events. </h4>
+        <select class='chosen-select' id='question9'>
+            <option value=''></option>
+            <option value='1'>1 (hard NO)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (definitely)</option>
+        </select>
+
+        <h3><strong> Question 10 </strong></h3>
+        <h4> You have a tendency to act spontaneously. </h4>
+        <select class='chosen-select' id='question10'>
+            <option value=''></option>
+            <option value='1'>1 (hard NO)</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5 (definitely)</option>
+        </select>
+
+        <br>
+        <br>
+
+        <button type='submit' class='btn btn-primary' id='submitButton'>
+            Submit Survey
+        </button>
+
+        <hr>
+        <footer class='footer'>
+            <div class='container'>
+                <p><a href='/api/friends' target='_blank'> API Friends List </a></p>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <!-- MODAL -->
+    <div id="results-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- MODAL CONTENTS -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title"><strong> Here's Your Best Match </strong></h2>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match-name"></h2>
+                    <img id="match-img" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script type='text/javascript'>
+    
+    // GET THE USER'S FORM INPUTS
+    $('#submitButton').on('click', function(event) {
+        event.preventDefault();
+
+        // THIS IS A FUNCTION FOR FORM VALIDATION,
+        // MAKING SURE THERE ARE NOT EMPTY FIELDS.
+        function formValidate() {
+            var valid = true;
+
+            // NAME/PHOTO ENTRY
+            $('.form-control').each(function() {
+                if ($(this).val() === '') {
+                    valid = false;
+                }
+            });
+
+            // QUESTION ENTRIES
+            $('.chosen-select').each(function() {
+                if ($(this).val() === '') {
+                    valid = false;
+                }
+            });
+
+            return valid;
+        };
+        
+        if (formValidate()) {
+            var userData = {
+                name: $('#name').val(),
+                photo: $('#photo').val(),
+                scores: [
+                    $('#question1').val(),
+                    $('#question2').val(),
+                    $('#question3').val(),
+                    $('#question4').val(),
+                    $('#question5').val(),
+                    $('#question6').val(),
+                    $('#question7').val(),
+                    $('#question8').val(),
+                    $('#question9').val(),
+                    $('#question10').val()
+                ]
+            };
+            console.log(userData);
+
+
+            // AND 'POST' THE USER DATA TO THE FRIENDS API
+            $.post('/api/friends', userData, function(data) {
+
+                $('#match-name').text(data.name);
+                $('#match-img').attr('src', data.photo);
+                // TOGGLE THE MODAL TO SHOW USER THEIR MATCH
+                $('#results-modal').modal('toggle');
+            });
+
+        } else {
+            alert('Please fill in all fields before hitting submit.');
+        }
+    });
+    
+    </script>
+
+</body>
+
+</html>
