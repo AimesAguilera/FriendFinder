@@ -1,3 +1,3 @@
 # FriendFinder
 
-## Link to App: https://git.heroku.com/secret-dusk-91883.git
+#### Link to App: https://secret-dusk-91883.herokuapp.com/
